@@ -1,7 +1,38 @@
 .navbar-brand{
   font-weight: bold;
 }
-
+.detail-event{
+  &__navbar{
+    z-index: 2;
+    .navbar-nav .nav-link{
+      color: $white;
+    }
+  }
+  &__primary-info{
+    margin-top: -120px;
+    .card{
+      &-title{
+        color: #C9C9C9;
+      }
+      &-text{
+        font-weight: bold;
+      }
+      &-share{
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: -90px;
+        transform: rotate(-90deg);
+        padding: 5px 40px;
+        border-radius: 20px 20px 0px 0px;
+        color: $white !important;
+        &--gradpurple{
+          background: linear-gradient($gr-purple);
+        }
+      }
+    }
+  }
+}
 .event{
   padding-top: 5%;
 }
@@ -128,7 +159,33 @@
     background: linear-gradient($gr-yellow);
   }
 }
-
+.hero{
+  position: relative;
+  margin-top: -60px;
+  background: url('../assets/event-1.jpg');
+  background-size: cover;
+  height: 788px;
+  &__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff, #fff0);
+  }
+  &__content{
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    color: $black;
+    h1{
+      font-size: $font-size-xxl;
+      line-height: 72px;
+      font-weight: bold;
+    }
+  }
+}
 .btn{
   &--rounded-md{
     color: $white;
@@ -142,6 +199,40 @@
   }
   &--gradgreen{
     background: linear-gradient($gr-green);
+  }
+  &--gradred{
+    background: linear-gradient($gr-red);
+  }
+}
+.badge{
+  color: $white;
+  &--gradred{
+    background: linear-gradient($gr-red);
+  }
+}
+.ticket{
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  color: $white;
+  font-weight: bold;
+  padding: 8px 30px;
+  &:before,
+  &:after{
+    content: ' ';
+    position: absolute;
+    top: 35%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: white;
+  }
+  &:before{
+    left: -8px;
+  }
+  &:after{
+    right: -8px;
   }
   &--gradred{
     background: linear-gradient($gr-red);

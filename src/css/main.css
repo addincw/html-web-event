@@ -6924,6 +6924,29 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-brand {
   font-weight: bold; }
 
+.detail-event__navbar {
+  z-index: 2; }
+  .detail-event__navbar .navbar-nav .nav-link {
+    color: #fff; }
+
+.detail-event__primary-info {
+  margin-top: -120px; }
+  .detail-event__primary-info .card-title {
+    color: #C9C9C9; }
+  .detail-event__primary-info .card-text {
+    font-weight: bold; }
+  .detail-event__primary-info .card-share {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: -90px;
+    transform: rotate(-90deg);
+    padding: 5px 40px;
+    border-radius: 20px 20px 0px 0px;
+    color: #fff !important; }
+    .detail-event__primary-info .card-share--gradpurple {
+      background: linear-gradient(to top right, #0D56FF, #E70DFF); }
+
 .event {
   padding-top: 5%; }
 
@@ -7021,6 +7044,30 @@ a.text-dark:hover, a.text-dark:focus {
   .icon--gradyellow {
     background: linear-gradient(to top right, #FFA50D, #FFFF0D); }
 
+.hero {
+  position: relative;
+  margin-top: -60px;
+  background: url("../assets/event-1.jpg");
+  background-size: cover;
+  height: 788px; }
+  .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff, #fff0); }
+  .hero__content {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    color: #000; }
+    .hero__content h1 {
+      font-size: 3.5rem;
+      line-height: 72px;
+      font-weight: bold; }
+
 .btn--rounded-md {
   color: #fff;
   padding: 8px 40px;
@@ -7036,3 +7083,31 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn--gradred {
   background: linear-gradient(to top right, #FF0000, #FFA04E); }
+
+.badge {
+  color: #fff; }
+  .badge--gradred {
+    background: linear-gradient(to top right, #FF0000, #FFA04E); }
+
+.ticket {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 30px; }
+  .ticket:before, .ticket:after {
+    content: ' ';
+    position: absolute;
+    top: 35%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: white; }
+  .ticket:before {
+    left: -8px; }
+  .ticket:after {
+    right: -8px; }
+  .ticket--gradred {
+    background: linear-gradient(to top right, #FF0000, #FFA04E); }

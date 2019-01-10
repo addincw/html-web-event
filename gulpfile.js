@@ -4,15 +4,15 @@ const browserSync = require('browser-sync').create()
 
 sass.compiler = require('node-sass')
 
-browserSync.init({
-  server: "./src"
-});
+// browserSync.init({
+//   server: "./src"
+// });
 
 function css(){
   return src('./src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(dest('./src/css'))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function js(){
@@ -27,5 +27,5 @@ function fas(){
 }
 
 watch('./src/scss/*.scss', css)
-watch('./src/*.html').on('change', browserSync.reload)
+// watch('./src/*.html').on('change', browserSync.reload)
 exports.default = parallel(fas, css, js)
