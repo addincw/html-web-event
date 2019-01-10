@@ -18,7 +18,7 @@
 .highlight{ }
 .slider{
   position: relative;
-  color: white;
+  color: $white;
   width: 100%;
   height: 444.6px;
   overflow: hidden;
@@ -47,7 +47,6 @@
       }
     }
   }
-
   &__content{
     padding-right: 30px;
 
@@ -60,14 +59,11 @@
       font-size: $font-size-xl;
       line-height: 65px;
       margin-top: 50px;
-
-      // @media
     }
     &__date{
       margin-top:30px;
     }
   }
-
   &__action{
     text-align: center;
     span{
@@ -79,6 +75,49 @@
   }
 }
 
+.search{
+  .form-control{
+    border: none;
+    border-bottom: 1px solid #C9C9C9;
+  }
+}
+
+.available{
+  .card{
+    margin-bottom: 40px;
+    height: 280px;
+    overflow: hidden;
+    &-title{
+      font-size: $font-size-lrg;
+      font-weight: bold;
+    }
+    &-date .icon{
+      color: $white;
+    }
+    &-body{
+      width: 60%;
+      padding-right: 10%;
+    }
+    &-bg{
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 40%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.loadmore{
+  padding: 100px 0px;
+  text-align: center;
+  background: linear-gradient(to top, #E3E3E3, #E3E3E300);
+  a{ color: $body-color; }
+}
 .icon{
   margin-right: 10px;
   &--rounded{
@@ -91,12 +130,20 @@
 }
 
 .btn{
-  &--rounded{
+  &--rounded-md{
     color: $white;
     padding: 8px 40px;
     border-radius: 30px;
   }
+  &--rounded-sm{
+    color: $white;
+    padding: 8px 15px;
+    border-radius: 30px;
+  }
   &--gradgreen{
     background: linear-gradient($gr-green);
+  }
+  &--gradred{
+    background: linear-gradient($gr-red);
   }
 }

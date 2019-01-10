@@ -6936,7 +6936,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .slider {
   position: relative;
-  color: white;
+  color: #fff;
   width: 100%;
   height: 444.6px;
   overflow: hidden;
@@ -6979,6 +6979,40 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 2rem;
       margin-bottom: 40px; }
 
+.search .form-control {
+  border: none;
+  border-bottom: 1px solid #C9C9C9; }
+
+.available .card {
+  margin-bottom: 40px;
+  height: 280px;
+  overflow: hidden; }
+  .available .card-title {
+    font-size: 2rem;
+    font-weight: bold; }
+  .available .card-date .icon {
+    color: #fff; }
+  .available .card-body {
+    width: 60%;
+    padding-right: 10%; }
+  .available .card-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 40%;
+    height: 100%; }
+    .available .card-bg img {
+      width: 100%;
+      height: 100%; }
+
+.loadmore {
+  padding: 100px 0px;
+  text-align: center;
+  background: linear-gradient(to top, #E3E3E3, #E3E3E300); }
+  .loadmore a {
+    color: #707070; }
+
 .icon {
   margin-right: 10px; }
   .icon--rounded {
@@ -6987,10 +7021,18 @@ a.text-dark:hover, a.text-dark:focus {
   .icon--gradyellow {
     background: linear-gradient(to top right, #FFA50D, #FFFF0D); }
 
-.btn--rounded {
+.btn--rounded-md {
   color: #fff;
   padding: 8px 40px;
   border-radius: 30px; }
 
+.btn--rounded-sm {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 30px; }
+
 .btn--gradgreen {
   background: linear-gradient(to top right, #1CCEB6, #32FF76); }
+
+.btn--gradred {
+  background: linear-gradient(to top right, #FF0000, #FFA04E); }
