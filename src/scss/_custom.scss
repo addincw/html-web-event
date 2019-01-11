@@ -2,6 +2,23 @@
   font-weight: bold;
 }
 .detail-event{
+  font-weight: bold;
+  h2{
+    font-size: $font-size-base;
+    color: #C9C9C9;
+    font-weight: normal;
+  }
+  .promotion{
+    position: relative;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      cursor: pointer;
+    }
+  }
   &__navbar{
     z-index: 2;
     .navbar-nav .nav-link{
@@ -12,6 +29,7 @@
     margin-top: -120px;
     .card{
       &-title{
+        font-size: $font-size-base;
         color: #C9C9C9;
       }
       &-text{
@@ -20,15 +38,73 @@
       &-share{
         cursor: pointer;
         position: absolute;
-        top: 40%;
-        left: -90px;
+        top: 43%;
+        left: -66px;
         transform: rotate(-90deg);
-        padding: 5px 40px;
-        border-radius: 20px 20px 0px 0px;
+        padding: 2px 20px;
+        border-radius: 10px 10px 0px 0px;
         color: $white !important;
         &--gradpurple{
           background: linear-gradient($gr-purple);
         }
+      }
+    }
+  }
+}
+.timeline{
+  padding-bottom: 50px;
+  &__header{
+    border-bottom: 1px solid #C9C9C9;
+    text-align: center;
+    h2{
+      margin: 0;
+      display: inline-block;
+      padding: 4px 20px;
+      border-radius: 10px 10px 0px 0px;
+      color: $white;
+      background: linear-gradient($gr-purple);
+      font-size: $font-size-base;
+    }
+  }
+  &__group{ margin-top: 30px; }
+  &__title{
+    font-size: $font-size-base;
+    color: #C9C9C9;
+  }
+  &__list{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 50px;
+    padding: 0px 25px;
+    li{
+      position: relative;
+      flex-grow: 1;
+      padding-top: 40px;
+      border-top: 1px solid #C9C9C9;
+      &::before{
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 2px solid $yellow;
+        background: $white;
+        position: absolute;
+        top: -18px;
+        left: 0;
+      }
+      &.active::before{
+        border: none;
+        background: linear-gradient($gr-yellow);
+      }
+      &.active{
+        border-top: 2px solid $yellow;
+      }
+      h4{
+        font-size: $font-size-base;
+        margin: 0;
+        font-weight: bold;
       }
     }
   }
@@ -184,6 +260,15 @@
       line-height: 72px;
       font-weight: bold;
     }
+  }
+}
+footer{
+  padding: 10px 0px;
+  text-align: center;
+  background: linear-gradient($gr-green);
+  color: $white;
+  a{
+    color: $white;
   }
 }
 .btn{
